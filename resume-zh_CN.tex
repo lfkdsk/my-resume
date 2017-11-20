@@ -1,0 +1,109 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{刘丰恺}
+
+\basicInfo{
+  \email{lfk\_dsk@hotmail.com} \textperiodcentered\ 
+  \phone{(+86) 183-4087-9772} \textperiodcentered\ 
+  \github[lfkdsk]{https://github.com/lfkdsk}}
+
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{大连理工大学}, 大连}{Sep 2014 -- 至今}
+\textit{在读学士}\ 软件工程, 预计 2018 年 6 月毕业
+
+\section{\faUsers\ 主要经历}
+\datedsubsection{\textbf{EL-Engine 表达式编译引擎} {\textperiodcentered\ 阿里巴巴业务平台事业部}}{June 2017 -- 至今}
+\role{项目开发者和主要维护者}
+
+系统获取请求需要依赖表达式判断进行业务路由分发，因而系统需要一个能够进行高性能的表达式计算引擎。在实习期间独立完成了 EL-Engine 的引擎设计实现工作，独立实现了针对 Expression Language 级语言的解释运行和 Runtime 编译及优化
+
+\begin{itemize}
+  \item EL-Engine 的表达式计算相比项目之前依赖的表达式引擎增速 20\%
+  \item 针对线上用例进行优化后达到 数量级 的增速，在 AST Runtime 优化 、常量节点折叠、Lexer \& Parser 、Runtime Compile、Template Generate  等可优化部分均有大量的优化实践和效果
+  \item 表达式解析引擎在系统中占较为重要的作用，核心位置高频执行，日 pv 过亿
+\end{itemize}
+
+\datedsubsection{\textbf{学伴} {\textperiodcentered\ OurEDA创新团队}}{June 2016 -- 至今}
+\role{3.0 版本开发者和维护者}
+
+\begin{itemize}
+  \item 第一次接手拥有大型用户量的应用，主要负责Android端的开发，开始对开发始于Android 开发萌芽时期的旧版本进行部分重构与维护。之后在开发3.0版本的过程中引入并在其中学到了依赖注入、响应式编程，RESTful API等业界先进的思想和工具，为日后的持续迭代和维护提供了保障，完成后客户端代码达到了7w+。
+  \item 3.0版本上线后，用户量提升到1.5w人左右，日活量有5k左右。
+\end{itemize}
+
+\datedsubsection{\textbf{智能空调扇} {\textperiodcentered\ OurEDA创新团队}}{Mar 2015 -- May 2015}
+\role{Android 开发工程师}
+
+\begin{itemize}
+  \item 智能空调扇是通过 智能手机控制的空调扇，手机应用和空调扇均由我们自主设计，能实现用智能手机控制风扇的温度，风向，风速和使用自然风算法进行智能调节，学习了很多嵌入式和单片机的知识。
+  \item 和专门负责硬件的同学进行交互学到了关于蓝牙、WiFi连接的知识，阅读文献实现调节算法。
+\end{itemize}
+
+
+\datedsubsection{\textbf{云手帐} {\textperiodcentered\ OurEDA创新团队}}{Sep 2015 -- Nov 2015}
+\role{Android 开发工程师}
+
+\begin{itemize}
+  \item 云手帐是一款记录性的 APP 支持笔迹、文本（支持Markdown）、代码（coder隐藏功能）的同步上传和记录。负责整个项目的设计和 Android 端的实现。
+  \item 使用了自己之前在 Github 开发的开源项目 JustWeTools 项目。
+\end{itemize}
+
+\section{\faGithubSquare\ 开源项目}
+\datedsubsection{\textbf{JustWeEngine}}{}
+\begin{itemize}
+  \item 项目地址:{\github[JustWeEngine]{https://github.com/lfkdsk/JustWeEngine}} {\textperiodcentered\ Star: 685}
+  \item 简介:基于 Android 平台的、面向原生的、2D游戏开发框架，目前稳定版本已推进到v1.13，新版本正在开发中，下一版本将支持内嵌的 DSL 游戏脚本（目前解释器已开发完毕）、Canvas控件布局（对Canvas画出的控件使用布局）。JustWeEngine 可以大大的简化游戏开发中的学习成本，利于一些小型游戏程序的编写。并且各种的相关的工具包也在持续更新中，为其提供更多强大的功能。
+  \item 使用情况：上一个小版本的下载量超过三千，用户有一定的活跃度，目前也在不断积累中，已有数个成型的项目接入了 JustWeEngine 用户项目页面。
+\end{itemize}
+
+\datedsubsection{\textbf{HobbyScript}}{}
+\begin{itemize}
+  \item 项目地址:{\github[HobbyScript]{https://github.com/lfkdsk/HobbyScript}} {\textperiodcentered\ Star: 70}
+  \item 能运行在 JVM 上的一门自制语言，兼具动态语言和静态语言的部分特性，目前其解释器已经通过 binding 和 JustWeEngine 进行连接作为一种的一门 DSL 用来编写游戏脚本。
+  \item AST 动态化，语法的扩展非常容易。
+\end{itemize}
+
+\datedsubsection{\textbf{JustWeTools}}{}
+\begin{itemize}
+  \item 项目地址:{\github[JustWeTools]{https://github.com/lfkdsk/JustWeTools}} {\textperiodcentered\ Star: 596}
+  \item 自定义控件的制品集合，仅包含不常见的开源控件，包括PaintView画图工具，CodeView代码编辑 ,MarkDownView支持MarkDown语法的文字渲染器，VerTextView支持竖行排版/下划线的TextView等控件，为有需求的用户提供了很大的便利和参考。
+\end{itemize}
+
+
+\section{\faCogs\ 技术文章}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item {\github[知乎专栏：SICP的魔法 https://goo.gl/ar5b1Y]{https://zhuanlan.zhihu.com/lfkdsk}}
+  \item {\github[源码阅读系列：EventBus https://goo.gl/bvgLmJ]{https://lfkdsk.github.io/2016/12/22/read-eventbus-source-code/}}
+  \item {\github[源码阅读系列：Rxjava2 https://goo.gl/i7YLim]{http://lfkdsk.github.io/2017/09/04/read-source-code-rxjava2/}}
+  \item {\github[译文:选择使用正确的 Markdown Parser https://goo.gl/qvAHkT]{https://lfkdsk.github.io/2017/02/24/translate-md/}}
+\end{itemize}
+
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 技术博客: https://lfkdsk.github.io
+  \item GitHub: https://github.com/lfkdsk
+  \item 语言: 英语 - 熟练(CET-6)
+\end{itemize}
+
+\section{致谢}
+
+  感谢您花时间阅读我的简历，期待能有机会和您共事。
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}

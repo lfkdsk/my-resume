@@ -1,0 +1,105 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Fengkai Liu}
+
+\basicInfo{
+  \email{lfk\_dsk@hotmail.com} \textperiodcentered\ 
+  \phone{(+86) 183-4087-9772} \textperiodcentered\ 
+  \linkedin[lfkdsk]{https://github.com/lfkdsk}}
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{DaLian University of Technology (DUT)}, LiaoNing, China}{2014 -- Present}
+\textit{Undergraduate student} in Software Engineering (SE), expected June 2018
+
+\section{\faUsers\ Main Experience}
+\datedsubsection{\textbf{EL-Engine - Expression Language Evalator} {\textperiodcentered\ Alibaba}}{June 2017 -- Present}
+\role{Project Developer \&\& Project maintainer}
+
+System access requests need to rely on the expression to judge the business routing distribution, so the system needs a high performance expression computing engine. During the course of the internship, the engine design and implementation of EL-Engine was completed independently, and the operation and Runtime compilation and optimization of the Expression Language language were implemented independently.
+
+\begin{itemize}
+  \item The expression calculation of EL-Engine is 20\% faster than the expression engine before the project.
+  \item Optimized for online use cases to achieve orders of magnitude growth, there are numerous optimizations and optimizations in the optimizable parts of AST Runtime Optimization, Constant Node Folding, Lexer \& Parser, Runtime Compile, Template Generate, and more.
+  \item Expression analysis engine in the system account for the more important role in the implementation of the core high-frequency, billions pv per day.
+\end{itemize}
+
+\datedsubsection{\textbf{Companion} {\textperiodcentered\ OurEDA Team}}{June 2016 -- Present}
+\role{3.0 Project mantainer}
+
+\begin{itemize}
+  \item For the first time took over the application with a large amount of users, is mainly responsible for the development of Android side, began to the development of Android development since the embryonic period of the old version of the partial reconstruction and maintenance. Later, in the process of developing version 3.0, I introduced and learned advanced concepts and tools such as Dependency Injection, Responsive Programming, RESTful API and so on, which provided a guarantee for the continuous iteration and maintenance in the future. After the completion of the client code reached 7w.
+  \item 3.0 version on the line, the user volume increased to around 1.5w people, the daily life of about 5k.
+\end{itemize}
+
+\datedsubsection{\textbf{Intelligent air conditioning fan} {\textperiodcentered\ OurEDA Team}}{Mar 2015 -- May 2015}
+\role{Android Developer}
+
+\begin{itemize}
+  \item Intelligent air-conditioning fan is controlled by the smart phone air-conditioning fan, mobile applications and air-conditioning fan are designed by our own, can be achieved with a smart phone to control the fan temperature, wind direction, wind speed and the use of natural wind algorithm for intelligent regulation, learn a lot of embedded And the one-chip computer knowledge.
+  \item Interact with classmates who specialize in hardware Learn about Bluetooth, WiFi connection, read literature Implementing algorithms.
+\end{itemize}
+
+
+\datedsubsection{\textbf{Cloud Writer} {\textperiodcentered\ OurEDA Team}}{Sep 2015 -- Nov 2015}
+\role{Android Developer}
+
+\begin{itemize}
+  \item Cloud Writer is a record of the APP support handwriting, text (support for Markdown), code (coder hidden features) synchronization upload and record. Responsible for the entire project design and Android-side implementation.
+  \item Used the JustWeTools project, an open source project I developed on Github before.
+\end{itemize}
+
+\section{\faGithubSquare\ Open Source Project}
+\datedsubsection{\textbf{JustWeEngine}}{}
+\begin{itemize}
+  \item Url:{\github[JustWeEngine]{https://github.com/lfkdsk/JustWeEngine}} {\textperiodcentered\ Star: 685}
+  \item Summary: Android-based, native-oriented, 2D game development framework, the current stable version has been advanced to v1.13, the new version is under development, the next version will support the embedded DSL game script (currently the interpreter has been developed ), Canvas control layout (use layout for Canvas drawn controls). JustWeEngine can greatly simplify the learning costs of game development, which is conducive to the preparation of some small game programs. And a variety of related toolkits are also constantly updated to provide them with more powerful features.
+  \item Usage: The previous version of a small version of the download volume of more than 3000, the user has a certain degree of activity, is also constantly accumulating, there are several formed projects have access to the JustWeEngine user project page.
+\end{itemize}
+
+\datedsubsection{\textbf{HobbyScript}}{}
+\begin{itemize}
+  \item Url:{\github[HobbyScript]{https://github.com/lfkdsk/HobbyScript}} {\textperiodcentered\ Star: 70}
+  \item A homegrown language that runs on the JVM with some of the features of both dynamic and static languages. Currently, its interpreter is already connected via binding and JustWeEngine as a DSL for writing game scripts.
+  \item AST dynamic, grammar expansion is very easy.
+\end{itemize}
+
+\datedsubsection{\textbf{JustWeTools}}{}
+\begin{itemize}
+  \item Url:{\github[JustWeTools]{https://github.com/lfkdsk/JustWeTools}} {\textperiodcentered\ Star: 596}
+  \item Custom control artifacts collection, contains only uncommon open-source controls, including PaintView drawing tools, CodeView code editor, MarkDownView MarkDown grammar support for text renderer, VerTextView support vertical layout / underline TextView and other controls for the needs of users Provides a great convenience and reference.
+\end{itemize}
+
+
+\section{\faCogs\ Tech Article}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item {\github[Magical SICP https://goo.gl/ar5b1Y]{https://zhuanlan.zhihu.com/lfkdsk}}
+  \item {\github[Sourse Reader：EventBus https://goo.gl/bvgLmJ]{https://lfkdsk.github.io/2016/12/22/read-eventbus-source-code/}}
+  \item {\github[Sourse Reader：Rxjava2 https://goo.gl/i7YLim]{http://lfkdsk.github.io/2017/09/04/read-source-code-rxjava2/}}
+  \item {\github[Use right Markdown Parser https://goo.gl/qvAHkT]{https://lfkdsk.github.io/2017/02/24/translate-md/}}
+\end{itemize}
+
+\section{\faInfo\ Others}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item Blog: https://lfkdsk.github.io
+  \item GitHub: https://github.com/lfkdsk
+  \item Language: Chinese, Engish - skilled(CET-6)
+\end{itemize}
+
+\section{Thx.}
+
+  Thank you for taking the time to read my resume and look forward to having a chance to work with you.
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
